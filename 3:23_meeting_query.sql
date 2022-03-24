@@ -1,0 +1,46 @@
+CREATE DATABASE CRYPTOZOO;
+USE CRYPTOZOO;
+
+CREATE TABLE LOCATION(
+	Location VARCHAR(25) NOT NULL,
+	Num_Exhibits INT,
+	Max_Occupancy INT,
+	PRIMARY KEY(Location));
+
+CREATE TABLE STAFF(
+	Staff_Name VARCHAR(25),
+	Staff_ID CHAR(9) NOT NULL,
+	Clearance BOOLEAN,
+	Is_Contracted BOOLEAN,
+	Salary INT,
+	PRIMARY KEY(Staff_ID));
+    
+CREATE TABLE EXHIBIT(
+	Name VARCHAR(15) NOT NULL,
+	Staff_Num INT,
+	Manager_ID CHAR(9),
+	Animal_Num INT,
+	Clearance BOOLEAN,
+	Location VARCHAR(25) NOT NULL,
+	PRIMARY KEY(Name, Location),
+	FOREIGN KEY(Manager_ID) REFERENCES STAFF(Staff_ID)
+		ON UPDATE CASCADE ON DELETE SET NULL,
+	FOREIGN KEY(Location) REFERENCES LOCATION(Location)
+		ON UPDATE CASCADE ON DELETE CASCADE);
+
+
+CREATE TABLE SPECIES(
+	Species_Name VARCHAR(30) NOT NULL,
+	Is_Endangered BOOLEAN,
+	PRIMARY KEY(Species_Name));
+
+CREATE TABLE ANIMAL(
+	Animal_Name VARCHAR(25),
+	ID CHAR(9) NOT NULL,
+	Exhibit VARCHAR(15),
+	Species_Name VARCHAR(30) NOT NULL,
+	PRIMARY KEY(ID),
+	FOREIGN KEY(Species_Name) REFERENCES SPECIES(Species_Name)
+		ON UPDATE CASCADE ON DELETE NO ACTION); -- After populating this table, see if chosing either RESTRICT or NO ACTION makes a difference.
+
+
