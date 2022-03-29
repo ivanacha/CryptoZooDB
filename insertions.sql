@@ -22,3 +22,7 @@ INSERT INTO ANIMAL VALUES("Milo",79863,"Quadrupeds", "Vampiricus Felinoness");
 INSERT INTO SERVICE VALUES("Cleaning", 1, 20, "Entrance");
 INSERT INTO SERVICE VALUES("Construction", 0, 30,"North America");
 INSERT INTO SERVICE VALUES("Cashier", 0, 15,"Entrance");
+-- equipment
+INSERT INTO EQUIPMENT VALUES("Pressure Washer", "North America", "Cleaning", 331480777,912914404);
+INSERT INTO EQUIPMENT VALUES("Drill", "Europe", "Construction", 441506111, 912904889);
+INSERT INTO EQUIPMENT VALUES("Credit Card Machine","Entrance", "Cashier", 685154625, 912904770);
