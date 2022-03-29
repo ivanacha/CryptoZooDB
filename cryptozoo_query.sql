@@ -30,6 +30,7 @@ CREATE TABLE EXHIBIT(
 
 
 CREATE TABLE SPECIES(
+	Common_Name VARCHAR(30),
 	Species_Name VARCHAR(30) NOT NULL,
 	Is_Endangered BOOLEAN,
 	PRIMARY KEY(Species_Name));
