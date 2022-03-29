@@ -10,3 +10,7 @@ INSERT INTO STAFF VALUES("Goldsmith",912904889,1,0,17000);
 --exhibit
 INSERT INTO EXHIBIT VALUES("Bi-Peds",3,912914404,3,1,"North America");
 INSERT INTO EXHIBIT VALUES("Winged Giants",5,912904889,6,1,"Asia");
+--species
+INSERT INTO  SPECIES VALUES("Bigfoot", "Bipedius Harriest", 1);
+INSERT INTO  SPECIES VALUES("Mothman", "Flightius Motheus",0);
+INSERT INTO  SPECIES VALUES("Chupacabra", "Vampiricus Felinoness", 0);
