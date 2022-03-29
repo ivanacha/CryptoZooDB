@@ -18,3 +18,7 @@ INSERT INTO  SPECIES VALUES("Chupacabra", "Vampiricus Felinoness", 0);
 INSERT INTO ANIMAL VALUES("Max", 01295, "Bi-peds", "Bipedius Harriest");
 INSERT INTO ANIMAL VALUES("Buddy", 75688, "Winged Giants", "Flightius Motheus");
 INSERT INTO ANIMAL VALUES("Milo",79863,"Quadrupeds", "Vampiricus Felinoness");
+-- service
+INSERT INTO SERVICE VALUES("Cleaning", 1, 20, "Entrance");
+INSERT INTO SERVICE VALUES("Construction", 0, 30,"North America");
+INSERT INTO SERVICE VALUES("Cashier", 0, 15,"Entrance");
