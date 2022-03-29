@@ -29,7 +29,7 @@ INSERT INTO EQUIPMENT VALUES("Credit Card Machine","Entrance", "Cashier", 685154
 -- quarantine
 INSERT INTO QUARANTINE VALUES (01295,"Fractured Skull", 912904770,'2022-12-14');
 INSERT INTO QUARANTINE VALUES (75688,"Lacerated Torso", 912904770,'2022-05-10');
---events
+-- events
 INSERT INTO EVENTS VALUES ("Birthday",2022,'2022-12-27','2022-12-31',"Tons of fun and festivities. This is a 21+ event.",1000,50000);
 -- event staff
 INSERT INTO EVENT_STAFF VALUES (912914404,"Birthday",2022,30);
