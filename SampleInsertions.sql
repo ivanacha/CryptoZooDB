@@ -10,6 +10,7 @@ INSERT INTO STAFF VALUES("Goldsmith",912904889,1,0,17000);
 -- exhibit
 INSERT INTO EXHIBIT VALUES("Bi-Peds",3,912914404,3,1,"North America");
 INSERT INTO EXHIBIT VALUES("Winged Giants",5,912904889,6,1,"Asia");
+INSERT INTO EXHIBIT VALUES('Quadrupeds', 6, 912904770,8,1,'Europe');
 -- species
 INSERT INTO  SPECIES VALUES("Bigfoot", "Bipedius Harriest", 1);
 INSERT INTO  SPECIES VALUES("Mothman", "Flightius Motheus",0);
@@ -27,9 +28,16 @@ INSERT INTO EQUIPMENT VALUES("Pressure Washer", "North America", "Cleaning", 331
 INSERT INTO EQUIPMENT VALUES("Drill", "Europe", "Construction", 441506111, 912904889);
 INSERT INTO EQUIPMENT VALUES("Credit Card Machine","Entrance", "Cashier", 685154625, 912904770);
 -- quarantine
-INSERT INTO QUARANTINE VALUES (01295,"Fractured Skull", 912904770,'2022-12-14');
-INSERT INTO QUARANTINE VALUES (75688,"Lacerated Torso", 912904770,'2022-05-10');
+INSERT INTO QUARANTINE VALUES (01295,"Fractured Skull", 912904770, '2022-12-14');
+INSERT INTO QUARANTINE VALUES (75688,"Lacerated Torso", 912904770, '2022-05-10');
+INSERT INTO QUARANTINE VALUES (79863,'Sprained Ankle', 912904770, '2022-03-29');
+
 -- events
-INSERT INTO EVENTS VALUES ("Birthday",2022,'2022-12-27','2022-12-31',"Tons of fun and festivities. This is a 21+ event.",1000,50000);
+INSERT INTO EVENTS VALUES ("Birthday", 2022,'2022-12-27','2022-12-31',"Tons of fun and festivities. This is a 21+ event.",1000,50000);
+INSERT INTO EVENTS VALUES ("St. Patrick's Day", 2022, '2022-03-17', '2022-03-19', "Family friendly event filled with green themed activities.", 20000, 15000);
+INSERT INTO EVENTS VALUES ("10 Year Anniversary", 2022, '2022-05-13', '2022-05-15',"Come celebrate 10 years of being open with us!", 12000, 18000);
+
 -- event staff
 INSERT INTO EVENT_STAFF VALUES (912914404,"Birthday",2022,30);
+INSERT INTO EVENT_STAFF VALUES (912904770,"St. Patrick’s Day", 2022, 15);
+INSERT INTO EVENT_STAFF VALUES (912904889, "10 Year Anniversary", 2022, 25);
