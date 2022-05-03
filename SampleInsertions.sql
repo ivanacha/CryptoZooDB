@@ -1,43 +1,71 @@
 -- location
-INSERT INTO  LOCATION VALUES ("North America", 3, 15);
-INSERT INTO  LOCATION VALUES("Asia",3, 20);
-INSERT INTO  LOCATION VALUES("Europe", 3, 18);
-INSERT INTO  LOCATION VALUES("Entrance", 0 , 0);
+INSERT INTO LOCATION VALUES("North America", 80);
+INSERT INTO LOCATION VALUES("Asia", 90);
+INSERT INTO LOCATION VALUES("Europe", 50);
+INSERT INTO LOCATION VALUES("South America", 70);
+INSERT INTO LOCATION VALUES("Africa", 80);
+INSERT INTO LOCATION VALUES("Antarctica", 50);
+INSERT INTO LOCATION VALUES("Oceania", 60);
+INSERT INTO LOCATION VALUES("Entrance", NULL);
+INSERT INTO LOCATION VALUES("Gardening Tools", NULL);
+INSERT INTO LOCATION VALUES("Janitorial Supply Storage", NULL);
+INSERT INTO LOCATION VALUES("Event Supply Storage", NULL);
 -- staff
-INSERT INTO STAFF VALUES("Salvador",912914404,1,1,15000);
-INSERT INTO STAFF VALUES("Lazarus", 912904770,1,0, 20000);
-INSERT INTO STAFF VALUES("Goldsmith",912904889,1,0,17000);
+INSERT INTO STAFF VALUES("Salvador",912914404,1,15000);
+INSERT INTO STAFF VALUES("Lazarus", 912904770,0, 20000);
+INSERT INTO STAFF VALUES("Goldsmith",912904889,0,17000);
+INSERT INTO STAFF VALUES("Picasso");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+INSERT INTO STAFF VALUES("");
+-- work_team
 -- exhibit
-INSERT INTO EXHIBIT VALUES("Bi-Peds",3,912914404,3,1,"North America");
-INSERT INTO EXHIBIT VALUES("Winged Giants",5,912904889,6,1,"Asia");
-INSERT INTO EXHIBIT VALUES('Quadrupeds', 6, 912904770,8,1,'Europe');
+INSERT INTO EXHIBIT VALUES("Bi-Peds","North America", 912914404);
+INSERT INTO EXHIBIT VALUES("Winged Giants","Asia", 912904889);
+INSERT INTO EXHIBIT VALUES('Quadrupeds','Europe', 912904770);
 -- species
-INSERT INTO  SPECIES VALUES("Bigfoot", "Bipedius Harriest", 1);
-INSERT INTO  SPECIES VALUES("Mothman", "Flightius Motheus",0);
-INSERT INTO  SPECIES VALUES("Chupacabra", "Vampiricus Felinoness", 0);
+INSERT INTO SPECIES VALUES("Bipedius Harriest", 1);
+INSERT INTO SPECIES VALUES("Flightius Motheus", 0);
+INSERT INTO SPECIES VALUES("Vampiricus Felinoness", 0);
+INSERT INTO SPECIES VALUES("Rampi Californii", 0);
 -- animal
-INSERT INTO ANIMAL VALUES("Max", 01295, "Bi-peds", "Bipedius Harriest");
-INSERT INTO ANIMAL VALUES("Buddy", 75688, "Winged Giants", "Flightius Motheus");
-INSERT INTO ANIMAL VALUES("Milo",79863,"Quadrupeds", "Vampiricus Felinoness");
+INSERT INTO ANIMAL VALUES("Max", 01295, "Bipedius Harriest", "Bi-peds");
+INSERT INTO ANIMAL VALUES("Buddy", 75688, "Flightius Motheus", "Winged Giants");
+INSERT INTO ANIMAL VALUES("Milo",79863, "Vampiricus Felinoness","Quadrupeds");
 -- service
-INSERT INTO SERVICE VALUES("Cleaning", 1, 20, "Entrance");
-INSERT INTO SERVICE VALUES("Construction", 0, 30,"North America");
-INSERT INTO SERVICE VALUES("Cashier", 0, 15,"Entrance");
+INSERT INTO SERVICE VALUES("Cleaning", 912344669, "Entrance", 1);
+INSERT INTO SERVICE VALUES("Construction", 912420699, "North America", 1);
+INSERT INTO SERVICE VALUES("Cashier", 912345999, "Entrance", 0);
 -- equipment
-INSERT INTO EQUIPMENT VALUES("Pressure Washer", "North America", "Cleaning", 331480777,912914404);
-INSERT INTO EQUIPMENT VALUES("Drill", "Europe", "Construction", 441506111, 912904889);
-INSERT INTO EQUIPMENT VALUES("Credit Card Machine","Entrance", "Cashier", 685154625, 912904770);
+INSERT INTO EQUIPMENT VALUES("Pressure Washer", "North America", 331480777);
+INSERT INTO EQUIPMENT VALUES("Drill", "Europe", 441506111);
+INSERT INTO EQUIPMENT VALUES("Credit Card Machine","Entrance", 685154625);
+-- in_use
 -- quarantine
 INSERT INTO QUARANTINE VALUES (01295,"Fractured Skull", 912904770, '2022-12-14');
 INSERT INTO QUARANTINE VALUES (75688,"Lacerated Torso", 912904770, '2022-05-10');
 INSERT INTO QUARANTINE VALUES (79863,'Sprained Ankle', 912904770, '2022-03-29');
-
--- events
-INSERT INTO EVENTS VALUES ("Birthday", 2022,'2022-12-27','2022-12-31',"Tons of fun and festivities. This is a 21+ event.",1000,50000);
-INSERT INTO EVENTS VALUES ("St. Patrick's Day", 2022, '2022-03-17', '2022-03-19', "Family friendly event filled with green themed activities.", 20000, 15000);
-INSERT INTO EVENTS VALUES ("10 Year Anniversary", 2022, '2022-05-13', '2022-05-15',"Come celebrate 10 years of being open with us!", 12000, 18000);
-
--- event staff
+-- event
+INSERT INTO EVENTS VALUES ("Birthday", '2022-12-27',,"Tons of fun and festivities. This is a 21+ event.", 50000);
+INSERT INTO EVENTS VALUES ("St. Patrick's Day", '2022-03-17', , "Family friendly event filled with green themed activities.", 15000);
+INSERT INTO EVENTS VALUES ("10 Year Anniversary", '2022-05-13', ,"Come celebrate 10 years of being open with us!", 18000);
+-- event_staff
 INSERT INTO EVENT_STAFF VALUES (912914404,"Birthday",2022,30);
 INSERT INTO EVENT_STAFF VALUES (912904770, "St. Patrick's Day", 2022, 15);
 INSERT INTO EVENT_STAFF VALUES (912904889, "10 Year Anniversary", 2022, 25);
