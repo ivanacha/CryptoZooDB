@@ -80,7 +80,7 @@ CREATE TABLE IN_USE (
 
 CREATE TABLE QUARANTINE(
 	Animal_ID CHAR(9) NOT NULL,
-	Injury VARCHAR(25),
+	Injury VARCHAR(50),
 	Assigned_Vet CHAR(9),
 	Projected_Release_Date DATE,
 	PRIMARY KEY(Animal_ID, Assigned_Vet, Injury),

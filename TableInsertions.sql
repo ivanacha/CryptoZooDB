@@ -107,3 +107,15 @@ INSERT INTO IN_USE VALUES(441506111, "Construction", 912904889);
 INSERT INTO IN_USE VALUES(685154625, "Cashier", 912904770);
 INSERT INTO IN_USE VALUES(440889202, "Cleaning", 912344669);
 INSERT INTO IN_USE VALUES(448559660, "Plumbing", 912345999);
+
+-- QUARANTINE
+INSERT INTO QUANRANTINE VALUES(01295, "Fractured Skull", 912904770, 2022-12-14);
+INSERT INTO QUANRANTINE VALUES(75688, "Lacerated Torso", 912904770, 2022-05-10);
+INSERT INTO QUANRANTINE VALUES(79863, "Sprained Ankle", 912904770, 2022-03-29);
+
+-- EVENT
+INSERT INTO EVENT VALUES("Hedy Lamar's Birthday", '1996-11-09 16:30', '7:38', "Tons of fun and festivities. This is a 21+ event.", 50000);
+INSERT INTO EVENT VALUES("St. Patrick's Day", '2022-03-17 13:00', '38:09', "Family friendly event filled with green themed activities", 15000);
+INSERT INTO EVENT VALUES("10-Year Anniversary", '2022-05-13 11:00', '75:46', "Come Celebrate", 18000);
+INSERT INTO EVENT VALUES("Earth Day", '1988-04-22 11:00', '9:46', "Grab your friends and family and join us as we plant trees outside of the  Aquatic Beasts exhibit", 2000);
+
