@@ -11,7 +11,7 @@ CREATE TABLE STAFF(
 	Staff_Name VARCHAR(25),
 	Staff_ID CHAR(9) NOT NULL,
 	Is_Contracted BOOLEAN,
-	Salary INT,
+	Salary DECIMAL(10, 2),
 	PRIMARY KEY(Staff_ID));
 
 CREATE TABLE WORK_TEAM(
