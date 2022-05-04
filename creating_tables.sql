@@ -94,7 +94,7 @@ CREATE TABLE EVENT(
 	Date DATETIME,
 	Hours TIME,
 	Description VARCHAR(140),
-	Cost INT NOT NULL,
+	Cost DECIMAL(10, 2) NOT NULL,
 	PRIMARY KEY (Name, Date));
 
 
