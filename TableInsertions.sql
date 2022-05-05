@@ -60,6 +60,7 @@ INSERT INTO EXHIBIT VALUES("Winged Giants","Asia", 912904889);
 INSERT INTO EXHIBIT VALUES('Quadrupeds','Europe', 912904770);
 INSERT INTO EXHIBIT VALUES("Aquatic Beasts", "Oceania", 912904404);
 INSERT INTO EXHIBIT VALUES("Extraterrestrials", "North America", 912904404);
+INSERT INTO EXHIBIT VALUES("Yokai", "Asia", 912904889);
 
 -- species 
 INSERT INTO SPECIES VALUES("Bipedius Harriest", FALSE);
@@ -71,6 +72,8 @@ INSERT INTO SPECIES VALUES("Bukit Timah Monkey", FALSE);
 INSERT INTO SPECIES VALUES("Dingbaticus Americanus", FALSE);
 INSERT INTO SPECIES VALUES("Dutch Flying Jellyfish", TRUE);
 INSERT INTO SPECIES VALUES("Braxxinius Monsterus", TRUE);
+INSERT INTO SPECIES VALUES("Rampi Californii", FALSE);
+INSERT INTO SPECIES VALUES("Nekomata Monta", TRUE);
 
 -- animal
 INSERT INTO ANIMAL VALUES("Max", 01295, "Bipedius Harriest", "Bi-peds");
@@ -79,10 +82,16 @@ INSERT INTO ANIMAL VALUES("Milo", 79863, "Vampiricus Felinoness", "Quadrupeds");
 INSERT INTO ANIMAL VALUES("Nightwing", 02000, "Subantartic Ningen", "Bi-peds");
 INSERT INTO ANIMAL VALUES("Bruce", 70162, "Braxxinius Monsterus", "Extraterrestrials");
 INSERT INTO ANIMAL VALUES("Duke", 98234, "Dutch Flying Jellyfish", "Extraterrestrials");
-INSERT INTO ANIMAL VALUES("Donna", 576869, "Dingbaticus Americanus", "Winged Giants");
-INSERT INTO ANIMAL VALUES("Barda", 828264, "Subantartic Ningen", "Bi-Peds");
-INSERT INTO ANIMAL VALUES("Cheshire", 707009, "Vampiricus Felinoness", "Quadrupeds");
-INSERT INTO ANIMAL VALUES("Constantine", 6857687, "Champtanystropheus americanus", "Aquatic Beasts");
+INSERT INTO ANIMAL VALUES("Donna", 57686, "Dingbaticus Americanus", "Winged Giants");
+INSERT INTO ANIMAL VALUES("Barda", 82826, "Subantartic Ningen", "Bi-Peds");
+INSERT INTO ANIMAL VALUES("Cheshire", 70700, "Vampiricus Felinoness", "Quadrupeds");
+INSERT INTO ANIMAL VALUES("Constantine", 68576, "Champtanystropheus americanus", "Aquatic Beasts");
+INSERT INTO ANIMAL VALUES("Ditto", 42340, "Rampi Californii", "Bi-peds");
+INSERT INTO ANIMAL VALUES("Marley", 62075, "Rampi Californii", "Bi-peds");
+INSERT INTO ANIMAL VALUES("Pants", 90940, "Rampi Californii", "Bi-peds");
+INSERT INTO ANIMAL VALUES("Mister", 76924, "Flightius Motheus", "Winged Giants");
+INSERT INTO ANIMAL VALUES("Aristotle", 78541, "Champtanystropheus americanus", "Aquatic Beasts");
+INSERT INTO ANIMAL VALUES("Yoruichi", 63017, "Nekomata Monta", "Yokai");
 
 -- service
 INSERT INTO SERVICE VALUES("Cleaning", 912344669, "Entrance", TRUE);
@@ -112,6 +121,7 @@ INSERT INTO IN_USE VALUES(448559660, "Plumbing", 912345999);
 INSERT INTO QUARANTINE VALUES(01295, "Fractured Skull", 912904770, '2022-12-14');
 INSERT INTO QUARANTINE VALUES(75688, "Lacerated Torso", 912904770, '2022-05-10');
 INSERT INTO QUARANTINE VALUES(79863, "Sprained Ankle", 912904770, '2022-03-29');
+INSERT INTO QUARANTINE VALUES(42340, "Bizzare Arm-like Growth", 912904770, '2022-05-20');
 
 -- EVENT
 INSERT INTO EVENT VALUES("Hedy Lamar's Birthday", '1996-11-09 16:30', '7:38', "Tons of fun and festivities. This is a 21+ event.", 50000);
